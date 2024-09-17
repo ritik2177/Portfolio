@@ -1,0 +1,573 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    height: 100%;
+    width: 100%;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+}
+.page{
+    height: 100%;
+    width: 100%;    
+    background-color: rgb(34, 8, 58);
+}
+#page1{
+    display: flex;
+}
+#heading{
+    height: 10%;
+    width: 100%;
+    position: fixed;
+    justify-content: center;
+    display: flex; 
+    align-items: center;
+    z-index: 10;
+}
+#bar{
+    margin-top: 15px;
+    height: 75%;
+    background: transparent; 
+    backdrop-filter: blur(20px); 
+    border-radius: 15px;
+    text-align: center;
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+    width: 70%;
+    box-shadow: 0px 0px 8px 5px rgb(26, 1, 46);
+}
+.text{
+    /* color: rgb(149, 1, 128); */
+    color: white;
+    font-weight: bold;
+
+    position: relative;
+    text-decoration: none;
+    transition: color 0.3s ease;    
+    padding-bottom: 7px;
+    padding: 10px;
+    border-radius: 4px;
+
+ 
+    top: -100px;
+    animation: moveDown 1s ease-out forwards;
+}
+@keyframes moveDown{
+    0%{
+        top: -100px;
+    }
+    100%{
+        top: 0px;
+    }
+}
+
+.text::after{
+    content: '';
+
+    position:absolute;
+    bottom: 0;
+    width: 0;
+    height: 3px;
+         
+    left: 50%;
+    transform: translateX(-50%);
+    transition: width 0.3s ease;
+    background-color: white;
+    transition: width 0.3s ease;
+   
+
+}
+.text:hover::after{
+    width: 100%;
+
+}
+.text:hover{
+    /* color: #868585; */
+    background-color: rgba(73, 71, 71, 0.6);
+}
+a{
+    text-decoration: underline transparent;
+}
+#page1-box1{
+    height: 100%;
+    width: 50%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#name{
+    color: white;
+    height: 70%;
+    width: 80%;
+    margin-top: 150px;
+    margin-left: 50px;
+}
+#page1 h2{
+    margin-top: 40px;
+}
+#page1-h1{
+    transform: translateX(-100%);
+    animation: slide-in 1.2s forwards;
+    opacity: 0;
+}
+@keyframes slide-in {
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+span{
+    
+    color: rgb(160, 3, 136);
+    font-size: xx-large;
+}
+#page1-icon{
+    /* background-color: red; */
+    display: flex;
+    width: 200px;
+    font-size: x-large;
+    margin-left: 0%;
+}
+.page1-icon{
+    margin-right: 15px;
+    padding: 5px;
+    border-radius: 10px;
+    color: rgb(160, 3, 136);
+    cursor: pointer;
+
+}
+.page1-icon:hover{
+    box-shadow: 0px 0px 8px 5px black;
+}
+#more-about-me{
+    margin-top: 25px;
+    padding: 10px;
+    /* font-weight: bolder; */
+    font-weight: bold;
+    cursor: pointer;   
+    border-radius: 20px; 
+
+    transform: translateY(100px);
+    animation: slidUp 1s ease-out forwards;
+    color: rgb(160, 3, 136);
+    border: solid 2px;
+    padding-left: 25px;
+    padding-right: 30px;
+    transition: background-color 0.5s ease, color 0.5s ease-in;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+
+}
+@keyframes slidUp{
+    0%{
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);;
+    }
+}
+#more-about-me:hover{
+    box-shadow: 0px 0px 8px 5px rgb(15, 3, 26);
+    transform: scale(0.9);
+    background-color: transparent;
+    color: rgb(160, 3, 136);
+}
+#more-about-me img{
+    padding-left: 11px;
+}
+#page1-box2{
+    margin-top: 20px;
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#page1-box2 img{
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    box-shadow: 2px 7px 10px black;
+    background-color: rgba(131, 27, 125, 0.2); 
+
+
+    transform: translateX(26%);
+    animation: slide-in 1.2s forwards;
+}
+#box2-image{
+    transition: transform 0.6s ease;
+    border-radius: 50%;
+
+}
+#box2-image:hover{
+    transform: scale(1.1);
+}
+
+#page2{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;    
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+
+#page2-image{
+    justify-content: center;
+    display: flex;
+}
+#page2-image img{
+    height: 100px;
+    width: 100px;
+    margin-top: 100px;
+    border-radius: 50%;
+    border:solid rgb(160, 3, 136) 3px;
+
+}
+#page2 h2{
+    text-align: center;
+    font-size: xx-large;
+    font-weight: bolder;
+}
+#page2 p{
+    margin-left: 15px;
+    margin-right: 15px;
+
+}
+#page2-icon{
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    font-size: x-large;
+    color: rgb(160, 3, 136);
+    cursor: pointer;
+}
+.page2-icon:hover{
+    transform: scale(0.9);        
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 8px 4px rgb(111, 3, 150);
+
+}
+.page2-icon a{
+        text-decoration: none;
+}
+#page2-button{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+.page2-button{
+    text-align: center;
+    padding: 15px;
+    margin-right: 15px;
+    border-radius: 20px;
+    border:solid 2px rgb(160, 3, 136);
+    width: 270px;
+    font-weight: bolder;
+    cursor: pointer; 
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.5s ease, color 0.5s ease-in;
+
+    
+}
+#page2-button2{
+    background-color: transparent;
+    color: white;
+}
+
+#page2-button1:hover{
+    background-color: transparent;
+    color: white;
+}
+#page2-button2:hover{
+    background-color: white;
+    color: black;
+}
+#page3{
+    justify-content: center;
+    color: white;
+}
+#page3 h1{
+    text-align: center;
+    padding-top: 80px;
+}
+#page3-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.page3-box{
+    height: 400px;
+    width: 330px;
+    border: none;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 1px white;
+    cursor: pointer; 
+    transition: transform 0.6s ease;
+}
+.page3-box:hover{
+    transform: scale(1.1);
+    position: relative;
+}
+.box-icon{
+    margin-left: 25px;
+    margin-top: 35px;
+    font-size: x-large;
+    color: rgb(160, 3, 136);
+}
+#logo-bottom3,#logo-bottom2,#logo-bottom1{
+    margin-left: 30px;
+    font-size: x-large;
+    color: rgb(160, 3, 136);
+}
+.page3-box h3{
+    margin-top: 15px;
+    margin-left: 25px;
+    font-weight: 200;
+}
+.box-para{
+    margin: 25px;
+    font-size: small;
+    text-align: justify;
+}
+#page4{
+    color: white;
+
+}
+#page4-header{
+    display: flex;
+    justify-content: center;
+}
+#page4-header h1{
+    margin-top: 70px;
+}
+#page4-boxA,#page4-boxB{
+    display: flex;
+    justify-content: center;
+}
+.page4-box{
+    height: 195px;
+    width: 500px;
+    margin-right: 60px;
+    margin-left: 60px;
+    margin-top: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 6px 1px rgb(160, 3, 136);    
+    position: relative;
+    transition: transform 0.6s ease;
+}
+.page4-box:hover{
+    transform: scale(0.95);
+}
+.page4-box img{
+    height: 195px;
+    width: 500px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+#page4-box1 img,#page4-box2 img,#page4-box3 img,#page4-box4 img{
+    position: absolute;
+}
+.sudobox{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7); 
+    border-radius: 10px;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.sudobox:hover{
+    background-color: transparent;
+}
+.sudobox h4{
+    color: rgb(220, 237, 251);
+}
+.sudobox button{
+    margin-left: 5px;
+    padding: 6px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 3px;
+    border: solid;
+    font-weight: bold;
+    background-color: orangered;
+    transition: background-color 0.5s ease, color 0.5s ease-in;
+
+}
+
+.sudobox button:hover{
+    color: rgb(160, 3, 136);
+    background-color: white;
+}
+#page5{
+    background-color: rgb(34, 8, 58);    
+    color: white;
+}
+#page5-header{
+    justify-content: center;
+    text-align: center;
+    display: flex;
+}
+.page5-boxA,.page5-boxB{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.page5-boxA,.page5-boxB i{
+    font-size: 900%;
+}
+.page5-box{
+    height: 180px;
+    width: 280px;
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+    position: relative;
+    transition: transform 0.8s ease;
+}
+.hover-text{
+    display: none;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    align-items: center;
+    font-size: xx-large;
+    color: white;
+}
+.page5-box:hover .hover-text{
+    display: block;
+}
+#page5-header h1{
+    margin-top: 80px;
+}
+.page5-box:hover{
+    transform: scale(0.9);
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+#page7-header{
+height: 140px;
+justify-content: center;
+display: flex;
+align-items: center;
+}
+#page7 h1{
+    margin-top: 70px;
+    color: white;
+    filter: brightness(0) invert(1);
+    margin-bottom: 30px;
+
+}
+#page7-mainbox{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+.page7-box{
+    border-radius: 10px;
+    margin-top: 40px;
+    transition: transform 0.5s ease;
+    box-shadow: 0px 0px 8px 5px rgb(26, 1, 46);
+}
+.page7-box img{
+    object-fit: cover;
+    width: 550px;
+    height: 360px;
+    border-radius: 10px;
+}
+#page7-box1{
+    margin-left: -600px;
+    z-index: 4;
+    position: absolute;
+}
+#page7-box1:hover{
+    z-index: 6;
+    transform: scale(1.15);
+}
+#page7-box2{
+    z-index: 5;
+    position: absolute;
+    width: 560px;
+    height: 400px;
+
+}
+#page7-box2 img{
+    width: 560px;
+    height: 400px;
+    margin-bottom: 20px;
+}
+#page7-box2:hover{
+    transform: scale(1.15);
+
+}
+#page7-box3{
+    margin-left: 600px;
+    z-index: 4;
+}
+#page7-box3:hover{
+    z-index: 6;
+    transform: scale(1.15);
+}
+#page6{
+    height: 45%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+}
+#page6 h1{
+    margin-bottom: 10px;
+}
+#lastpage-about p{
+    padding: 1px;
+    color: white;
+
+}
+#lastpage-about i{
+    color: orangered;
+}
+#lastpage-about p:hover{
+    transform: scale(0.9);
+    cursor: pointer;
+}
+#details h4{
+    margin: 10px;
+}
+#details h4:hover{
+    transform: scale(0.9);
+}
+#last-icon{
+    display: flex;    
+}
+#last-icon p{
+    padding-right: 4dvh;
+    font-size: x-large;
+    cursor: pointer;
+    color: orangered;
+}
+#last-icon p:hover{
+    transform: scale(0.9);
+}
