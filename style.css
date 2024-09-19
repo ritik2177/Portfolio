@@ -466,6 +466,7 @@ span{
     transform: scale(0.9);
     background-color: rgba(0, 0, 0, 0.3);
     border-radius: 10px;
+    border: soloid 1px orangered;
 }
 #page7-header{
 height: 140px;
