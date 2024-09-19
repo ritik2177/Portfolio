@@ -376,8 +376,8 @@ span{
     transform: scale(0.95);
 }
 .page4-box img{
-    height: 195px;
-    width: 500px;
+    height: 100%;
+    width: 500%;
     object-fit: cover;
     border-radius: 10px;
 }
