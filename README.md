@@ -1,7 +1,7 @@
 # Portfolio
 By Ritik Kumar
 
-[Visit to my Portfolio](https://ritik2177.github.io/Portfolio/)
+[Visit to my Portfolio](ritikszportfolio.netlify.app)
 
 Screenshots
 ![](./image/1.png)
